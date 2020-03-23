@@ -14,7 +14,7 @@ def make_fits():
 
     PWD=os.getcwd()
     new_dir_path = PWD + "/" +'fits'
-    FNAME=glob.glob('*rbn.img*')[0]
+    FNAME=glob.glob('*3.0-10.0keV_rbn.img*')[0]
     imgdata=pyfits.open(FNAME)[0].data
     hpxdata=pyfits.open(FNAME)[1].data
     if not os.path.exists(new_dir_path):

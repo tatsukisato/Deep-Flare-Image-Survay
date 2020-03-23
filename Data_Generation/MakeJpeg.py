@@ -29,6 +29,7 @@ def ds9():
         d.set("file %s/%s"%(dir_name,i))
         d.set("saveimage jpeg %s/%s.jpg 100"%(new_dir_path,root))
      d.set("exit")
+     time.sleep(2)
     else:
         print ("jpeg directory exist!!")
 

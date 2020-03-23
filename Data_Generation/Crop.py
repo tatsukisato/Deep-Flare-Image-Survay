@@ -4,7 +4,7 @@
 #jpeg/内の.jpegファイルに対して、トリミングを行う
 #出力はcrop/
 
-def crop():
+def Crop():
     from PIL import Image
     import os
     PWD=os.getcwd()
@@ -23,4 +23,4 @@ def crop():
         print ("crop directory exist !!")
 
 if __name__ == '__main__':
-    crop()
+    Crop()
